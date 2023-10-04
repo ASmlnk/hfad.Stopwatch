@@ -1,60 +1,27 @@
 package com.hfad.stopwatch
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.SystemClock
-import android.widget.Button
-import android.widget.Chronometer
+import androidx.appcompat.app.AppCompatActivity
+import com.hfad.stopwatch.chapter5Stopwatch.MainActivityStopwatch
+import com.hfad.stopwatch.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var stopwatch: Chronometer
-    var running = false  // Хронометр работает?
-    var offset: Long = 0  //Базовое смещение
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        //Получение ссылки на секундомер
-        stopwatch = findViewById<Chronometer>(R.id.stopwatch)
-
-        //Кнопка start запускает секундомер, если он не работал
-        val startButton = findViewById<Button>(R.id.start_button)
-        startButton.setOnClickListener {
-            if (!running) {
-                setBaseTime()
-                stopwatch.start()
-                running = true
+        binding.apply {
+            chapter5.setOnClickListener {
+                val intent =MainActivityStopwatch.newIntent(this@MainActivity)
+                startActivity(intent)
             }
         }
 
-        //Кнопка pause останавливает секундомер, если он работал
-        val pauseButton = findViewById<Button>(R.id.pause_button)
-        pauseButton.setOnClickListener {
-            if (running) {
-                saveOffset()
-                stopwatch.stop()
-                running = false
-            }
-        }
-
-        //Кнопка reset обнуляет offset и базовое время
-        val resetButton = findViewById<Button>(R.id.reset_button)
-        resetButton.setOnClickListener {
-            offset = 0
-            setBaseTime()
-        }
-
     }
 
-    //Обновляет время stopwatch.base
-    fun setBaseTime() {
-        stopwatch.base = SystemClock.elapsedRealtime() - offset
-    }
-
-    //Сохраняет offset
-    fun saveOffset() {
-        offset = SystemClock.elapsedRealtime() - stopwatch.base
-    }
 }

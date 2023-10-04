@@ -13,6 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Stopwatch"
         tools:targetApi="31">
+        <activity android:name=".chapter5Stopwatch.MainActivityStopwatch"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
