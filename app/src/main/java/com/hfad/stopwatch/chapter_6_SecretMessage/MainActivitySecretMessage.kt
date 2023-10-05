@@ -1,11 +1,10 @@
-package com.hfad.stopwatch.chapter6SecretMessage
+package com.hfad.stopwatch.chapter_6_SecretMessage
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.hfad.stopwatch.R
-import com.hfad.stopwatch.chapter5Stopwatch.MainActivityStopwatch
 
 class MainActivitySecretMessage: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

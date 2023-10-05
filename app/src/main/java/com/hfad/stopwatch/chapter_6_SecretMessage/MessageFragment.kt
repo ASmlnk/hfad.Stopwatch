@@ -1,4 +1,4 @@
-package com.hfad.stopwatch.chapter6SecretMessage
+package com.hfad.stopwatch.chapter_6_SecretMessage
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

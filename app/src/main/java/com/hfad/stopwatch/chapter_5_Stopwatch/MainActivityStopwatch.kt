@@ -1,4 +1,4 @@
-package com.hfad.stopwatch.chapter5Stopwatch
+package com.hfad.stopwatch.chapter_5_Stopwatch
 
 import android.content.Context
 import android.content.Intent

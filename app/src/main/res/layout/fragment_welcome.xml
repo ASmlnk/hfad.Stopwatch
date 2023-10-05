@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".chapter6SecretMessage.WelcomeFragment">
+    tools:context=".chapter_6_SecretMessage.WelcomeFragment">
 
     <TextView
         android:layout_width="match_parent"

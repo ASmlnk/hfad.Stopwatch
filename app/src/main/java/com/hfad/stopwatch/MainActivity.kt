@@ -2,8 +2,9 @@ package com.hfad.stopwatch
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.hfad.stopwatch.chapter5Stopwatch.MainActivityStopwatch
-import com.hfad.stopwatch.chapter6SecretMessage.MainActivitySecretMessage
+import com.hfad.stopwatch.chapter_5_Stopwatch.MainActivityStopwatch
+import com.hfad.stopwatch.chapter_6_SecretMessage.MainActivitySecretMessage
+import com.hfad.stopwatch.chapter_8_CatChat.MainActivityCatChat
 import com.hfad.stopwatch.databinding.ActivityMainBinding
 
 
@@ -23,6 +24,10 @@ class MainActivity : AppCompatActivity() {
             }
             chapter6.setOnClickListener {
                 val intent = MainActivitySecretMessage.newIntent(this@MainActivity)
+                startActivity(intent)
+            }
+            chapter8.setOnClickListener {
+                val intent = MainActivityCatChat.newIntent(this@MainActivity)
                 startActivity(intent)
             }
         }

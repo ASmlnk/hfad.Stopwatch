@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.hfad.stopwatch.chapter6SecretMessage.WelcomeFragment"
+        android:name="com.hfad.stopwatch.chapter_6_SecretMessage.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/messageFragment"
-        android:name="com.hfad.stopwatch.chapter6SecretMessage.MessageFragment"
+        android:name="com.hfad.stopwatch.chapter_6_SecretMessage.MessageFragment"
         android:label="fragment_message"
         tools:layout="@layout/fragment_message" >
         <action
@@ -26,7 +26,7 @@
     </fragment>
     <fragment
         android:id="@+id/encryptFragment"
-        android:name="com.hfad.stopwatch.chapter6SecretMessage.EncryptFragment"
+        android:name="com.hfad.stopwatch.chapter_6_SecretMessage.EncryptFragment"
         android:label="fragment_encrypt"
         tools:layout="@layout/fragment_encrypt" >
         <argument

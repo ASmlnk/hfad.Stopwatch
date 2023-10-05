@@ -13,9 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Stopwatch"
         tools:targetApi="31">
-        <activity android:name=".chapter6SecretMessage.MainActivitySecretMessage"
+        <activity android:name=".chapter_8_CatChat.MainActivityCatChat"
             android:exported="false"/>
-        <activity android:name=".chapter5Stopwatch.MainActivityStopwatch"
+        <activity android:name=".chapter_6_SecretMessage.MainActivitySecretMessage"
+            android:exported="false"/>
+        <activity android:name=".chapter_5_Stopwatch.MainActivityStopwatch"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
