@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/activity_main.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/fragment_encrypt.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/fragment_message.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/fragment_welcome.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/secret_message_activity_main.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/stopwatch_activity_main.xml" value="0.1" />
       </map>
     </option>

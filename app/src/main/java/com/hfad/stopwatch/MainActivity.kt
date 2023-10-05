@@ -3,6 +3,7 @@ package com.hfad.stopwatch
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.hfad.stopwatch.chapter5Stopwatch.MainActivityStopwatch
+import com.hfad.stopwatch.chapter6SecretMessage.MainActivitySecretMessage
 import com.hfad.stopwatch.databinding.ActivityMainBinding
 
 
@@ -17,7 +18,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             chapter5.setOnClickListener {
-                val intent =MainActivityStopwatch.newIntent(this@MainActivity)
+                val intent = MainActivityStopwatch.newIntent(this@MainActivity)
+                startActivity(intent)
+            }
+            chapter6.setOnClickListener {
+                val intent = MainActivitySecretMessage.newIntent(this@MainActivity)
                 startActivity(intent)
             }
         }
