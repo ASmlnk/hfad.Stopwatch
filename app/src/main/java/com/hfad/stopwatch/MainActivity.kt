@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.hfad.stopwatch.chapter_5_Stopwatch.MainActivityStopwatch
 import com.hfad.stopwatch.chapter_6_SecretMessage.MainActivitySecretMessage
 import com.hfad.stopwatch.chapter_8_CatChat.MainActivityCatChat
+import com.hfad.stopwatch.chapter_9_BitsAndPizzas.MainActivityBitsAndPizzas
 import com.hfad.stopwatch.databinding.ActivityMainBinding
 
 
@@ -30,8 +31,10 @@ class MainActivity : AppCompatActivity() {
                 val intent = MainActivityCatChat.newIntent(this@MainActivity)
                 startActivity(intent)
             }
+            chapter9.setOnClickListener {
+                val intent = MainActivityBitsAndPizzas.newIntent(this@MainActivity)
+                startActivity(intent)
+            }
         }
-
     }
-
 }
