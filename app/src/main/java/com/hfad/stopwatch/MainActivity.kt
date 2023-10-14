@@ -2,6 +2,7 @@ package com.hfad.stopwatch
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.hfad.stopwatch.chapter_11_GuessingGame.MainActivityGuessingGame
 import com.hfad.stopwatch.chapter_5_Stopwatch.MainActivityStopwatch
 import com.hfad.stopwatch.chapter_6_SecretMessage.MainActivitySecretMessage
 import com.hfad.stopwatch.chapter_8_CatChat.MainActivityCatChat
@@ -33,6 +34,10 @@ class MainActivity : AppCompatActivity() {
             }
             chapter9.setOnClickListener {
                 val intent = MainActivityBitsAndPizzas.newIntent(this@MainActivity)
+                startActivity(intent)
+            }
+            chapter11.setOnClickListener {
+                val intent = MainActivityGuessingGame.newIntent(this@MainActivity)
                 startActivity(intent)
             }
         }
