@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".chapter_11_GuessingGame.GameFragment">
+    tools:context=".chapter_13_GuessingGame.GameFragmentDataBinding">
 
     <TextView
         android:id="@+id/word"

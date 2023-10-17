@@ -1,4 +1,4 @@
-package com.hfad.stopwatch.chapter_11_GuessingGame
+package com.hfad.stopwatch.chapter_13_GuessingGame
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,21 +8,22 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
-import com.hfad.stopwatch.databinding.FragmentGameBinding
+import com.hfad.stopwatch.databinding.FragmentGame13Binding
 
-class GameFragment : Fragment() {
 
-    private lateinit var viewModel: GameViewModel
-    private var _binding: FragmentGameBinding? = null
+class GameFragmentDataBinding : Fragment() {
+
+    private lateinit var viewModel: GameViewModelDataBinding
+    private var _binding: FragmentGame13Binding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentGameBinding.inflate(inflater, container, false)
+        _binding = FragmentGame13Binding.inflate(inflater, container, false)
         val view = binding.root
-        viewModel = ViewModelProvider(this)[GameViewModel::class.java]
+        viewModel = ViewModelProvider(this)[GameViewModelDataBinding::class.java]
 
         viewModel.incorrectGuesses.observe(viewLifecycleOwner, Observer { newValue ->
             binding.incorrectGuesses.text = "Incorrect guesses: $newValue"
@@ -35,8 +36,8 @@ class GameFragment : Fragment() {
         })
         viewModel.gameOver.observe(viewLifecycleOwner, Observer { newValue ->
             if (newValue) {
-                val action = GameFragmentDirections
-                    .actionGameFragmentToResultFragment(viewModel.wonLostMessage())
+                val action = GameFragmentDataBindingDirections
+                    .actionGameFragmentDataBindingToResultFragmentDataBinding(viewModel.wonLostMessage())
                 view.findNavController().navigate(action)
             }
         })

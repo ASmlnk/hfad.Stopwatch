@@ -15,4 +15,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="chapter9">chapter 9. Bits And Pizzas</string>
     <string name="chapter11">chapter 11. Guessing Game</string>
+    <string name="chapter13">chapter 13. Guessing Game (dataBinding)</string>
 </resources>

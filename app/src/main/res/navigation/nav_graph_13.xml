@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_13"
+    app:startDestination="@id/gameFragmentDataBinding">
+
+    <fragment
+        android:id="@+id/gameFragmentDataBinding"
+        android:name="com.hfad.stopwatch.chapter_13_GuessingGame.GameFragmentDataBinding"
+        android:label="GameFragmentDataBinding"
+        tools:layout="@layout/fragment_game_13">
+        <action
+            android:id="@+id/action_gameFragmentDataBinding_to_resultFragmentDataBinding"
+            app:destination="@id/resultFragmentDataBinding"
+            app:popUpTo="@id/gameFragmentDataBinding"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragmentDataBinding"
+        android:name="com.hfad.stopwatch.chapter_13_GuessingGame.ResultFragmentDataBinding"
+        android:label="ResultFragmentDataBinding"
+        tools:layout="@layout/fragment_result_13">
+        <action
+            android:id="@+id/action_resultFragmentDataBinding_to_gameFragmentDataBinding"
+            app:destination="@id/gameFragmentDataBinding" />
+        <argument
+            android:name="result"
+            app:argType="string" />
+    </fragment>
+</navigation>

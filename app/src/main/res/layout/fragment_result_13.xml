@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".chapter_11_GuessingGame.ResultFragment">
+    tools:context=".chapter_13_GuessingGame.ResultFragmentDataBinding">
 
     <TextView
         android:id="@+id/won_lost"
@@ -19,4 +19,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Start new game" />
+
 </LinearLayout>
