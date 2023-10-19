@@ -24,7 +24,7 @@ class GameViewModelDataBinding : ViewModel() {
     val livesLeft: LiveData<Int>
         get() = _livesLeft
 
-    private val _gameOver = MutableLiveData<Boolean>(false)
+    private val _gameOver = MutableLiveData(false)
     val gameOver: LiveData<Boolean>
         get() = _gameOver
 
@@ -81,5 +81,9 @@ class GameViewModelDataBinding : ViewModel() {
         else if (isLost()) message = "You lost!"
         message += "The word was $secretWord."
         return message
+    }
+
+    fun finishGame() {
+        _gameOver.value = true
     }
 }

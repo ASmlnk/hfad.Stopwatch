@@ -31,7 +31,8 @@ class ResultFragmentDataBinding : Fragment() {
         viewModel = ViewModelProvider(this, viewModelFactory)[ResultViewModelDataBinding::class.java]
 
         binding.apply {
-            wonLost.text = viewModel.result
+            resultViewModel = viewModel
+
             newGameButton.setOnClickListener {
                 view.findNavController()
                     .navigate(R.id.action_resultFragmentDataBinding_to_gameFragmentDataBinding)

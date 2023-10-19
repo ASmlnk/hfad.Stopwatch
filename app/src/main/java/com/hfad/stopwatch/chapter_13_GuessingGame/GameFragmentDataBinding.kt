@@ -25,15 +25,11 @@ class GameFragmentDataBinding : Fragment() {
         val view = binding.root
         viewModel = ViewModelProvider(this)[GameViewModelDataBinding::class.java]
 
-        viewModel.incorrectGuesses.observe(viewLifecycleOwner, Observer { newValue ->
-            binding.incorrectGuesses.text = "Incorrect guesses: $newValue"
-        })
-        viewModel.livesLeft.observe(viewLifecycleOwner, Observer { newValue ->
-            binding.lives.text = "You have $newValue lives left"
-        })
-        viewModel.secretWordDisplay.observe(viewLifecycleOwner, Observer { newValue ->
-            binding.word.text = newValue
-        })
+        binding.apply {
+            gameViewModel = viewModel
+            lifecycleOwner = viewLifecycleOwner //позволяет макету реагировать на обновление данных LiveData
+        }
+
         viewModel.gameOver.observe(viewLifecycleOwner, Observer { newValue ->
             if (newValue) {
                 val action = GameFragmentDataBindingDirections

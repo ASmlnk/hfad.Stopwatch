@@ -16,4 +16,6 @@
     <string name="chapter9">chapter 9. Bits And Pizzas</string>
     <string name="chapter11">chapter 11. Guessing Game</string>
     <string name="chapter13">chapter 13. Guessing Game (dataBinding)</string>
+    <string name="lives_left">You have %d lives left</string>
+    <string name="incorrect_guesses">Incorrect guesses: %s</string>
 </resources>
