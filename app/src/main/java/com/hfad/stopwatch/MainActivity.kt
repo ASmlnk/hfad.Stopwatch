@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.hfad.stopwatch.chapter_11_GuessingGame.MainActivityGuessingGame
 import com.hfad.stopwatch.chapter_13_GuessingGame.MainActivityGuessingGameDataBinding
+import com.hfad.stopwatch.chapter_14_Tasks.MainActivityTasks
 import com.hfad.stopwatch.chapter_5_Stopwatch.MainActivityStopwatch
 import com.hfad.stopwatch.chapter_6_SecretMessage.MainActivitySecretMessage
 import com.hfad.stopwatch.chapter_8_CatChat.MainActivityCatChat
@@ -43,6 +44,10 @@ class MainActivity : AppCompatActivity() {
             }
             chapter13.setOnClickListener {
                 val intent = MainActivityGuessingGameDataBinding.newIntent(this@MainActivity)
+                startActivity(intent)
+            }
+            chapter14.setOnClickListener {
+                val intent = MainActivityTasks.newIntent(this@MainActivity)
                 startActivity(intent)
             }
         }

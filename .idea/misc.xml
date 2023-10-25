@@ -6,6 +6,7 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/activity_main.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/bits_and_pizzas_activity_main.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/cat_chat_activity_main.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/fragment_edit_text.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/fragment_encrypt.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/fragment_game.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/fragment_game_13.xml" value="0.21693840579710144" />
@@ -16,12 +17,15 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/fragment_result.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/fragment_result_13.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/fragment_sent_items.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/fragment_tasks.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/fragment_welcome.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/guessing_game_activity_main.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/guessing_game_activity_main_13.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/nav_header.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/secret_message_activity_main.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/stopwatch_activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/task_item.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/layout/tasks_activity_main.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/menu/menu_main.xml" value="0.31614583333333335" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/menu/menu_main_2.xml" value="0.3151041666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stopwatch/app/src/main/res/menu/menu_toolbar.xml" value="0.15729166666666666" />
