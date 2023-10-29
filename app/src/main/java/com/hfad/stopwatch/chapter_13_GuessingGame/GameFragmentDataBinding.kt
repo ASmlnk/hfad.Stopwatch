@@ -10,7 +10,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.hfad.stopwatch.databinding.FragmentGame13Binding
 
-
 class GameFragmentDataBinding : Fragment() {
 
     private lateinit var viewModel: GameViewModelDataBinding

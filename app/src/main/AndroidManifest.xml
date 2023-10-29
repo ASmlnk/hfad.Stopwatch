@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Stopwatch"
         tools:targetApi="31">
+        <activity android:name=".chapter_19_GuessingGame.MainActivityGuessingGameCompose"
+            android:exported="false"/>
         <activity
             android:name=".chapter_18_TemteratureConverter.ui.MainActivityTemperatureConverter"
             android:exported="false"

@@ -6,6 +6,7 @@ import com.hfad.stopwatch.chapter_11_GuessingGame.MainActivityGuessingGame
 import com.hfad.stopwatch.chapter_13_GuessingGame.MainActivityGuessingGameDataBinding
 import com.hfad.stopwatch.chapter_14_Tasks.MainActivityTasks
 import com.hfad.stopwatch.chapter_18_TemteratureConverter.ui.MainActivityTemperatureConverter
+import com.hfad.stopwatch.chapter_19_GuessingGame.MainActivityGuessingGameCompose
 import com.hfad.stopwatch.chapter_5_Stopwatch.MainActivityStopwatch
 import com.hfad.stopwatch.chapter_6_SecretMessage.MainActivitySecretMessage
 import com.hfad.stopwatch.chapter_8_CatChat.MainActivityCatChat
@@ -53,6 +54,10 @@ class MainActivity : AppCompatActivity() {
             }
             chapter18.setOnClickListener {
                 val intent = MainActivityTemperatureConverter.newIntent(this@MainActivity)
+                startActivity(intent)
+            }
+            chapter19.setOnClickListener {
+                val intent = MainActivityGuessingGameCompose.newIntent(this@MainActivity)
                 startActivity(intent)
             }
         }
